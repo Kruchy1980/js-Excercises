@@ -1,1 +1,0 @@
-document.write("Jestem Tu - javascript"); // should be in document displayed
