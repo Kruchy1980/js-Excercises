@@ -12,6 +12,7 @@ div {
     color: #fff;
     text-align: center;
     line-height: 30px;
+    border: 2px solid #000;
 }
 
 .circle {
