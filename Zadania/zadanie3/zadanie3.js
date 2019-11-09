@@ -17,7 +17,7 @@ let size = 100;
 // window.innerWidth * 0.6;
 
 //on scrolling window event
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function() {
   //first condition instruction responsible for changing sizes
   // block the max size of box - half size of window
   if (grow) {
@@ -37,3 +37,37 @@ window.addEventListener("scroll", () => {
     grow = !grow; // becouse now it has alredy chnged value
   }
 });
+
+// //Zadnie samuraj
+// const squere = document.createElement("div");
+// document.body.appendChild(squere);
+
+// let grow = true; //flaga
+
+// let size = 100; //wielkość kwadratu
+// squere.style.width = size + "px";
+// // 100 + "px" -> "100" + "px" -> "100px"
+// squere.style.height = size + "px";
+
+// //maksymlana wielkość kwadratu
+// //window.innerWidth * 0.5
+
+// window.addEventListener("scroll", function() {
+//   // size = size + 10;
+
+//   if (size >= window.innerWidth / 2) {
+//     grow = !grow;
+//   } else if (size <= 0) {
+//     grow = !grow;
+//   }
+
+//   if (grow) {
+//     size += 5;
+//     squere.style.width = size + "px";
+//     squere.style.height = size + "px";
+//   } else {
+//     size -= 5;
+//     squere.style.width = size + "px";
+//     squere.style.height = size + "px";
+//   }
+// });
