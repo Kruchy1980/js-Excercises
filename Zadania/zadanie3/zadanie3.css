@@ -1,0 +1,16 @@
+.box {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    /* element still will be in the same part pof page even if we will scroll it*/
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* This will set the middle of box to the position defined by top and left */
+}
+
+body {
+    height: 10000vh;
+    /* it used to show the scroll on blank page and means that we want 10000 viev height have */
+}
