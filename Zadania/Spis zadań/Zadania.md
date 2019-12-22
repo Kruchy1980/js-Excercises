@@ -12,3 +12,9 @@ Adding elements to lists with button.
 
 Kwadrat zmieniający rozmiar podczas scrollowania strony
 Square which changes sahpe during page scrolling.
+
+# Zadanie 4 / Excercise 4
+
+Pasek zminiający rozmiary i tło podczas scrollowania.
+
+The belt which changes dimensions and colors during page scrolling.
