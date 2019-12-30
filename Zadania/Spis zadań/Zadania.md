@@ -39,3 +39,9 @@ Create button which after click will add elements with next number to list and i
 Event - wykrycie i wyswietlanie pozycji myszki
 
 Events - detection and display of mouse position/ pointer position
+
+# Zadanie 7 / Excercise 7 - Lekcja 49/Lesson 49
+
+Event - zmiana tła przy zmianie pozycji myszki
+
+Events - background color changing durng the pointer position change
