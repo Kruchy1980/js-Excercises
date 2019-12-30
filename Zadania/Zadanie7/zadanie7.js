@@ -25,8 +25,8 @@ document.body.addEventListener('mousemove', (e) => {
   // h1.textContent = `${e.screenX}, ${e.screenY}`;
   // h1.textContent = `${e.pageX}, ${e.pageY}`;
 
-  // Declare what should be displayed in output
+  // Declare what should be displayed in output we czn use <br> or <div> tag to separate the values into singular lines if we are using inner HTML other solution will be given in next excercise no 8.
   output.innerHTML = `Pointer position is in: <br>
-  x:  ${e.clientX} <br>   and <br>
-  y:  ${e.clientY}`;
+  x:  ${e.clientX} <br>   and <div>
+  y:  ${e.clientY}</div>`;
 })

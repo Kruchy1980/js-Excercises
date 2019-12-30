@@ -40,8 +40,8 @@ Event - wykrycie i wyswietlanie pozycji myszki
 
 Events - detection and display of mouse position/ pointer position
 
-# Zadanie 7 / Excercise 7 - Lekcja 49/Lesson 49
+# Zadanie 8 / Excercise 8 - Lekcja 49+50/Lesson 49+50
 
-Event - zmiana tła przy zmianie pozycji myszki
+Event - zmiana tła przy zmianie pozycji myszki i optymalizacja kodu
 
-Events - background color changing durng the pointer position change
+Events - background color changing durng the pointer position change and code optimalisation
