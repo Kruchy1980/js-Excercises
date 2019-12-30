@@ -30,3 +30,9 @@ Create button which clicked will display elements of list and after next click w
 Stwórz przycisk który po naciśnięciu będzie dodawał elementy do listy z kolejnym numerem element i zwiększał wielkość każdego elementu o 1.
 
 Create button which after click will add elements with next number to list and increase the elemets sixe by one px.
+
+# Zadanie 7 / Excercise 7
+
+Event - wykrycie i wyswietlanie pozycji myszki
+
+Events - detection and display of mouse position/ pointer position
