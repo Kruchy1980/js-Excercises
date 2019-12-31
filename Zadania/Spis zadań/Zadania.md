@@ -44,4 +44,10 @@ Events - detection and display of mouse position/ pointer position
 
 Event - zmiana tła przy zmianie pozycji myszki i optymalizacja kodu
 
-Events - background color changing durng the pointer position change and code optimalisation
+Events - background color changing during the pointer position change and code optimalisation
+
+# Zadanie 9 / Excercise 9 - Lekcja 51+52/Lesson 51+52
+
+Event - zmiana tła po zmianie pozycji kursora i kliknięciu
+
+Events - background color changing after pointer position change and click.
