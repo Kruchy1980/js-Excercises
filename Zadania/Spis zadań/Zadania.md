@@ -51,3 +51,9 @@ Events - background color changing during the pointer position change and code o
 Event - zmiana tła po zmianie pozycji kursora i kliknięciu
 
 Events - background color changing after pointer position change and click.
+
+# Zadanie 10 / Excercise 9 - Lekcja 53/Lesson 53
+
+Event - łapanie i upuszczanie kwadratu ze zmianą jego koloru
+
+Events - catchimg and dropping square with changing of its color
