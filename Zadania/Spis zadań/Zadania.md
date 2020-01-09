@@ -63,3 +63,15 @@ Events - catchimg and dropping square with changing of its color
 Event - zmiana koloru tła za pomocą klawiatury - strzałek góra dół
 
 Events - background color changing by the keyboard arrows / up and down
+
+# Zadanie 12 / Excercise 12 - Lekcja 56 + 57/Lesson 56 + 57
+
+Podaj hasło, odkryj wiadomosć - ver 1
+
+Give the pasoword and show message - ver 1
+
+# Zadanie 13 / Excercise 13 - Lekcja 58/Lesson 58
+
+Podaj hasło - wiele haseł, odkryj wiadomosć - ver 2
+
+Give the pasoword - many paswords and show message - ver 2
