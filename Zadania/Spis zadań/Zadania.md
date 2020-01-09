@@ -76,7 +76,7 @@ Podaj wiele haseł i wiadomości - ver 2
 
 Enter many passwords and messages and show message - ver 2
 
-# Zadanie 14 / Excercise 14 - Lekcja 59 + 60/Lesson 59 + 60
+# Zadanie 14 / Excercise 14 - Lekcja 59 - 62/Lesson 59 - 62
 
 Sprawdź czy wpisne w input hasło pasuje do któregoś zadeklarowanego w tablicy
 
