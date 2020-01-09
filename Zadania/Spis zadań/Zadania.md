@@ -52,8 +52,32 @@ Event - zmiana tła po zmianie pozycji kursora i kliknięciu
 
 Events - background color changing after pointer position change and click.
 
-# Zadanie 10 / Excercise 9 - Lekcja 53/Lesson 53
+# Zadanie 10 / Excercise 10 - Lekcja 53/Lesson 53
 
 Event - łapanie i upuszczanie kwadratu ze zmianą jego koloru
 
 Events - catchimg and dropping square with changing of its color
+
+# Zadanie 11 / Excercise 11 - Lekcja 54 + 55/Lesson 54 +55
+
+Event - zmiana koloru tła za pomocą klawiatury - strzałek góra dół
+
+Events - background color changing by the keyboard arrows / up and down
+
+# Zadanie 12 / Excercise 12 - Lekcja 56 + 57/Lesson 56 + 57
+
+Podaj hasło, odkryj wiadomosć - ver 1
+
+Enter the pasoword and show message - ver 1
+
+# Zadanie 13 / Excercise 13 - Lekcja 58/Lesson 58
+
+Podaj wiele haseł i wiadomości - ver 2
+
+Enter many passwords and messages and show message - ver 2
+
+# Zadanie 14 / Excercise 14 - Lekcja 59 - 62/Lesson 59 - 62
+
+Sprawdź czy wpisne w input hasło pasuje do któregoś zadeklarowanego w tablicy
+
+Check if entered password is the same as in the array
