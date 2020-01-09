@@ -68,10 +68,10 @@ Events - background color changing by the keyboard arrows / up and down
 
 Podaj hasło, odkryj wiadomosć - ver 1
 
-Give the pasoword and show message - ver 1
+Enter the pasoword and show message - ver 1
 
 # Zadanie 13 / Excercise 13 - Lekcja 58/Lesson 58
 
-Podaj hasło - wiele haseł, odkryj wiadomosć - ver 2
+Podaj wiele haseł i wiadomości - ver 2
 
-Give the pasoword - many paswords and show message - ver 2
+Enter many passwords and messages and show message - ver 2
