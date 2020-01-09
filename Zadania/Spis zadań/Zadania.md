@@ -75,3 +75,9 @@ Enter the pasoword and show message - ver 1
 Podaj wiele haseł i wiadomości - ver 2
 
 Enter many passwords and messages and show message - ver 2
+
+# Zadanie 14 / Excercise 14 - Lekcja 59 + 60/Lesson 59 + 60
+
+Sprawdź czy wpisne w input hasło pasuje do któregoś zadeklarowanego w tablicy
+
+Check if entered password is the same as in the array
