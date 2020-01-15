@@ -87,3 +87,9 @@ Check if entered password is the same as in the array
 Losowanie imienia dla dziecka.
 
 Child name draw.
+
+# Zadanie 16 / Excercise 16 - Lekcja 64/Lesson 64
+
+Generowanie 1000 różnych kodów.
+
+Generating ogf 1000 different codes

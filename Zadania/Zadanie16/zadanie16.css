@@ -23,6 +23,7 @@ button {
 }
 div {
   margin: 10px;
-  font-size: 26px;
-  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
