@@ -1,6 +1,6 @@
 // Firstly as always the variables
 // Characters we would like to use for generating codes in string because string has its length as same as array
-const chars = 'ABCDEFGHIJK0123456789';
+const chars = 'ABCDEFGHIJKLMNOPRSTUWXYZ0123456789';
 // button
 const generateCodeButton = document.querySelector('button');
 // For display div
@@ -19,15 +19,15 @@ const codeGenerator = () => {
     // if we add the line below the section will always be cleared
     box.textContent = '';
     // firstly we want to generate any code as many times as we defined:) for what we need loop and for loop will be the best for it
-    for (let i = 0; i < codeNumbers; i++) {
+    for (let i = 1; i <= codeNumbers; i++) {
         // generate any text it works so now we need instead of fixed code make another loop which will generate rqarndom letters in our code
         // const code = 'tekst'; // works
-        let code = ''; // declared as an empty string on the beginning
+        let code = `${i}.  `; // declared as an empty string on the beginning
         for (let j = 0; j < charsNumber; j++) {
             // Now we need to create the callback for our code which will concatenate the elements to empty string eg
             // code += '1'; now we need genereate the index of string
             // now is good to create variable which will describe our index
-            const index = Math.round(Math.random() * chars.length - 1);
+            const index = Math.round(Math.random() * (chars.length - 1));
             // console.log(chars.length);
 
             //just for check
