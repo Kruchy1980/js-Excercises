@@ -81,3 +81,15 @@ Enter many passwords and messages and show message - ver 2
 Sprawdź czy wpisne w input hasło pasuje do któregoś zadeklarowanego w tablicy
 
 Check if entered password is the same as in the array
+
+# Zadanie 15 / Excercise 15 - Lekcja 63/Lesson 63
+
+Losowanie imienia dla dziecka.
+
+Child name draw.
+
+# Zadanie 16 / Excercise 16 - Lekcja 64/Lesson 64
+
+Generowanie 1000 różnych kodów.
+
+Generating ogf 1000 different codes
