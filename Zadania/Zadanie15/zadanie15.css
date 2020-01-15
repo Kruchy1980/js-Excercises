@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  border-bottom: 1px solid #444;
+  background-color: #ccc;
+  /* position: fixed; */
+  width: 100%;
+  text-align: center;
+}
+button {
+  display: block;
+  border: 5px outset #3ca8f0;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px;
+}
+div {
+  margin: 10px;
+  font-size: 26px;
+  text-align: center;
+}
