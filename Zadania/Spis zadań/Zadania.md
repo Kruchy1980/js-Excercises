@@ -93,3 +93,9 @@ Child name draw.
 Generowanie 1000 różnych kodów.
 
 Generating ogf 1000 different codes
+
+# Zadanie 17 / Excercise 17 - Lekcja 65/Lesson 65
+
+Dodawanie elementu do tablicy.
+
+Adding element to array.
