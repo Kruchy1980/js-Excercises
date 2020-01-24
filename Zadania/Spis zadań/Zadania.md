@@ -99,3 +99,9 @@ Generating ogf 1000 different codes
 Dodawanie elementu do tablicy.
 
 Adding element to array.
+
+# Zadanie 18 / Excercise 18 - Lekcja 66 + 67/Lesson 66 + 67
+
+Losowa rada od komputera.
+
+Rundom Advice from computer.
