@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #999;
+  background-color: #111;
+  border-bottom: 1px solid #659916;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 5px;
+}
+
+.form {
+  display: flex;
+  /* height: 1.2em; */
+}
+label,
+input,
+button,
+label {
+  font-weight: bold;
+  align-self: center;
+  align-content: center;
+  margin-left: 2%;
+}
+.lab {
+  text-align: center;
+  font-size: 3em;
+  margin: 10px;
+}
+
+.result {
+  width: auto;
+  max-width: 60%;
+  margin: 15px auto;
+  padding: 5px;
+  background-color: rgba(127, 255, 0, 0.4);
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+}

@@ -104,4 +104,17 @@ Adding element to array.
 
 Losowa rada od komputera.
 
-Rundom Advice from computer.
+Random Advice from computer.
+
+# Zadanie 19 / Excercise 19 - Lekcja 68/Lesson 68
+
+Losowanie liczby z dowolnego przedziału
+
+Draw the number from any set of numbers
+number range
+
+# Zadanie 20 / Excercise 20 - Lekcja 69+70/Lesson 69+70
+
+Wybór gracza
+
+Player choose
