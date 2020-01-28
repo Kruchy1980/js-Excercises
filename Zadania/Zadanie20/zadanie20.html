@@ -18,25 +18,35 @@
   <body>
     <header>
       <h1>
-        Projekt 7/Project7 - Game <br> Zadanie20/Excercise20 <br />
-        Wybór Gracza/ Player choose
+        Projekt 7/Project7 - Game <br> Zadanie20/Excercise20 <br /> 
       </h1>
+      <div> Elements: <br>
+        1.Wybór Gracza - Player's draw choice<br>
+        2.Wybór AI - Ai Choice <br>
+        3.Określenie wygranego - Winner declaration <br>
+        4.Publikacja wyniki gry - Scores publication <br>
+        5.Reset wyboru gracza - Player's choice reset <br>
+      </div>
     </header>
     <section id="main">
       <h1>GRA "PAPIER, KAMIEŃ, NOŻYCZKI"</h1>
       <div class="choose">WYBIERZ PROSZĘ SWOJĄ BROŃ :) - &#x1F3F9;</div>
       <div class="image-container">
-        <img src="./images/papier.jpg" alt="" srcset="" />
-        <img src="./images/kamien.jpg" alt="" srcset="" />
-        <img src="./images/nozyczki.jpg" alt="" srcset="" />
+        <!-- to thr images we need to add attribute data-options to tell the program what was the chosen image and we can add the title to the image as well-->
+        <img title="papier" data-option="paper" src="./images/papier.jpg" alt="" srcset="" />
+        <img title="kamień" data-option="stone" src="./images/kamien.jpg" alt="" srcset="" />
+        <img title="nożyce" data-option="scissors" src="./images/nozyczki.jpg" alt="" srcset="" />
       </div>
     </section>
+    <div class="play">Let's Play</div>
     <section class="row"></class>
       <article class="choices-main">
       <h3>WYBORY GRACZY</h3>
         <div class="choices">
-        <div class="playerWeaponChoice">Twój wybór:</div>
-        <div class="computerWeaponChoice">Wybór komputera:</div>
+          <!-- Here we czn add one more thing to get information about choosen weapon -->
+        <div class="playerWeaponChoice">Twój wybór: <span data-sumary="your-choice"></span></div>
+        <div class="computerWeaponChoice">Wybóromputera: <span data-sumary="ai-choice"></span>
+        </div>
       </div>
       </article>
       <article class="actual-notes">

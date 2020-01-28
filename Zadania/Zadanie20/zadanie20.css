@@ -38,15 +38,41 @@ header h1 {
 }
 
 .image-container {
-  display: flex;
-  flex-direction: row;
-  margin: 30px;
-  justify-content: space-around;
+  overflow: hidden; /* What will happen if the content overflows the element */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
 }
+.image-container img {
+  width: 200px;
+  margin: 20px;
+  display: inline-block;
+}
+img:hover {
+  cursor: pointer;
+}
+
+/* Button to start game */
+.play {
+  font-size: 2em;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px auto;
+  padding: 5px;
+  width: 20%;
+  border: 3px groove rgba(255, 69, 0, 0.5);
+  border-radius: 25px;
+}
+.play:hover {
+  cursor: pointer;
+  background-color: rgba(255, 69, 0, 0.5);
+  color: #fff;
+}
+/* !!!!!!!!!!!!!!! may be used !!!!!!!!!!!!!!!!!!!!11 */
 
 .row {
   display: flex;
-  .choicesflex-direction: row;
+
   justify-content: space-evenly;
 }
 .score {
@@ -57,4 +83,13 @@ header h1 {
 .choices {
   margin: 20px;
   text-align: center;
+}
+
+header div {
+  text-align: left;
+  font-size: 0.4em;
+  margin: 20px;
+}
+header div:hover {
+  font-size: 2em;
 }

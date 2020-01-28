@@ -113,8 +113,9 @@ Losowanie liczby z dowolnego przedziału
 Draw the number from any set of numbers
 number range
 
-# Zadanie 20 / Excercise 20 - Lekcja 69+70/Lesson 69+70
+# Zadanie 20 / Excercise 20 - Lekcja 69-74/Lesson 69+74
 
-Wybór gracza
-
-Player choose
+Gra :
+1.Wybór gracza
+Game:
+1.Player choose
