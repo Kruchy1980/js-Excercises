@@ -74,6 +74,7 @@ const addAdvice = () => {
     answer.style.border = '1px solid #ccc';
     // now the message which should be displayed to user
     answer.innerText = `Właśnie dodałeś: \n\'--> ${addedItem} <--\' \n do Twojego zbioru rad.`
+    advice.value = '';
 }
 // 4. Reset Button
 const clearArray = () => {
