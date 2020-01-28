@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projekt 7/Project7 Zadanie20/Excercise20</title>
+    <!-- We will use the fonts from the internet so we need to link it here as - this is only one way to download fonts to the project -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- And now we can use them in our css -->
     <link rel="stylesheet" href="./zadanie20.css" />
   </head>
 
@@ -15,7 +21,50 @@
         Wybór Gracza/ Player choose
       </h1>
     </header>
+    <section id="main">
+      <h1>GRA "PAPIER, KAMIEŃ, NOŻYCZKI"</h1>
+      <div class="choose">WYBIERZ PROSZĘ SWOJĄ BROŃ :) - &#x1F3F9;</div>
+      <div class="image-container">
+        <img src="./images/papier.jpg" alt="" srcset="" />
+        <img src="./images/kamien.jpg" alt="" srcset="" />
+        <img src="./images/nozyczki.jpg" alt="" srcset="" />
+      </div>
+    </section>
+    <section class="row"></class>
+      <article class="choices-main">
+      <h3>WYBORY GRACZY</h3>
+        <div class="choices">
+        <div class="playerWeaponChoice">Twój wybór:</div>
+        <div class="computerWeaponChoice">Wybór komputera:</div>
+      </div>
+      </article>
+      <article class="actual-notes">
+          <h3>AKTUALNE WYNIKI</h3>
+          <div class="notes">
+            <div class="gameQuantity">Ilość gier:</div>
+            <div class="wins">Wygranych:</div>
+            <div class="looses">Przegranych:</div>
+            <div class="draws">Remisów:</div>
+            </div>
+      </article>
+
+    </section>
+
+    <section class="score">
+      <h1>ZWYCIĘZCA GRY:</h1>
+      <div class="result"></div>
+    </section>
 
     <script src="./zadanie20.js"></script>
   </body>
 </html>
+
+    <!-- <section class="actualResults right">
+      <h3>AKTUALNE WYNIKI</h3>
+      <div class="actualNotes">
+        <div class="gameQuantity">Ilość gier:</div>
+        <div class="wins">Wygranych:</div>
+        <div class="looses">Przegranych:</div>
+        <div class="draws">Remisów:</div>
+      </div>
+    </section> -->

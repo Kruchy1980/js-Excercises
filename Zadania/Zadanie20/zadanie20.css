@@ -1,10 +1,12 @@
-body {
+/* font-family: 'Roboto', sans-serif; */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  /* Here we can paste the font name */
+  font-family: "Roboto", sans-serif;
 }
 header {
-  margin: 0;
-  padding: 0;
   text-align: center;
   color: #999;
   background-color: #111;
@@ -15,4 +17,44 @@ header {
 header h1 {
   margin: 0;
   padding: 5px;
+}
+/* Game main section */
+#main h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.choose {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid #7e067e;
+  color: #7e067e;
+  line-height: 2em;
+  border-radius: 20px;
+  width: 80%;
+  background-color: rgba(106, 190, 190, 0.5);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+.row {
+  display: flex;
+  .choicesflex-direction: row;
+  justify-content: space-evenly;
+}
+.score {
+  text-align: center;
+  margin: 20px auto;
+}
+.notes,
+.choices {
+  margin: 20px;
+  text-align: center;
 }
