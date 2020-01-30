@@ -44,18 +44,18 @@
       <h3>WYBORY GRACZY</h3>
         <div class="choices">
           <!-- Here we czn add one more thing to get information about choosen weapon -->
-        <div class="playerWeaponChoice">Twój wybór: <span data-sumary="your-choice"></span></div>
-        <div class="computerWeaponChoice">Wybóromputera: <span data-sumary="ai-choice"></span>
+        <div class="playerWeaponChoice">Twój wybór: <span data-summary="your-choice"></span></div>
+        <div class="computerWeaponChoice">Wybóromputera: <span data-summary="ai-choice"></span>
         </div>
       </div>
       </article>
       <article class="actual-notes">
           <h3>AKTUALNE WYNIKI</h3>
           <div class="notes">
-            <div class="gameQuantity">Ilość gier:</div>
-            <div class="wins">Wygranych:</div>
-            <div class="looses">Przegranych:</div>
-            <div class="draws">Remisów:</div>
+            <div class="gameQuantity">Ilość gier: <span>0</span> </div>
+            <div class="wins">Wygranych: <span>0</span></div>
+            <div class="looses">Przegranych: <span>0</span></div>
+            <div class="draws">Remisów: <span>0</span></div>
             </div>
       </article>
 
@@ -63,7 +63,8 @@
 
     <section class="score">
       <h1>ZWYCIĘZCA GRY:</h1>
-      <div class="result"></div>
+      <!-- We czn use in here the dara summary as well to choose the text for winning later -->
+      <div data-summary="who-win" class="result"></div>
     </section>
 
     <script src="./zadanie20.js"></script>
