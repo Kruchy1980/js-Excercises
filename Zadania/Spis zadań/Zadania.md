@@ -133,8 +133,14 @@ Efekt pisania na maszynie - dodawanie znaków z tekstu
 
 Typing effect - text marks adding
 
-# Zadanie 22 / Excercise 22 - Lekcja 75/Lesson 75
+# Zadanie 22 / Excercise 22 - Lekcja 76/Lesson 76
 
 Efekt pisania na maszynie - migający kursor na końcu linii
 
 Typing effect - blinking cursor at the end of line
+
+# Zadanie 23 / Excercise 23 - Lekcja 77-78/Lesson 77-78
+
+Efekt pisania na maszynie - zmieniający się tekst
+
+Typing effect - changable text in typing

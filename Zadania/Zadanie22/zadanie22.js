@@ -11,7 +11,7 @@ let indexText = 0;
 const intervalTime = 50;
 // cursor blinking time
 const cursorBlinkingTime = 150;
-//Guncrions
+//Functions
 //1.Typing functions
 const addLetter = () => {
     // choose the element into which we want to add the text
