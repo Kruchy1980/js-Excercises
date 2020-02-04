@@ -115,7 +115,20 @@ number range
 
 # Zadanie 20 / Excercise 20 - Lekcja 69-74/Lesson 69+74
 
-Gra :
-1.Wybór gracza
+Gra:
+1.Wybór Gracza - Player's choice
+2.Wybór AI - Ai Choice/ main steering function
+3.Określenie wygranego - Winner declaration 4.Publikacja - wyniki gry - Scores publication
+5.Reset wyboru gracza - Player's choice re-set
 Game:
-1.Player choose
+1.Player's choice
+2.Ai Choice/ main steering function
+3.Winner declaration
+4.Scores publication
+5.Player's choice re-set
+
+# Zadanie 21 / Excercise 21 - Lekcja 75/Lesson 75
+
+Efekt pisania na maszynie - dodawanie znaków z tekstu
+
+Typing effect - text marks adding
