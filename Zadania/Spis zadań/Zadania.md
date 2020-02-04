@@ -132,3 +132,9 @@ Game:
 Efekt pisania na maszynie - dodawanie znaków z tekstu
 
 Typing effect - text marks adding
+
+# Zadanie 22 / Excercise 22 - Lekcja 75/Lesson 75
+
+Efekt pisania na maszynie - migający kursor na końcu linii
+
+Typing effect - blinking cursor at the end of line
