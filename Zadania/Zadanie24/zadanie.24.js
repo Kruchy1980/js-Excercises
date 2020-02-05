@@ -28,7 +28,7 @@ const slideList = [{
 },];
 
 // Now we can set time needed to slide automatic cahcange
-const slideTime = 5000;
+let slideTime = 5000;
 // Object index
 let activeSlide = 0; // we already have information about the image in our html
 // Time for changeble items to declare in variables
@@ -40,7 +40,38 @@ const projectTitle = document.querySelector('.slide-title ');
 const projectDescriptionShort = document.querySelector('.slide-description ');
 // Indicators variable - collecting to array /nodeList of singular elements/indicators and we need to exchange it for casual array because the check method we want to use is not availible for nodeList so we need to use the square brqackets and spread operator to do that
 const indicators = [...document.querySelectorAll('.indicators-dots span')];
+//---------------------------
+
 // Functions:
+//1b. Change Slides on arrow press
+const changeSlidesOnArrows = (e) => {
+    // disable interval to not working during the key press
+    // clearInterval(slideInterval); // it will be exxecuted after keypress
+    // //Set the slide on keypress
+    // slideTime = 10000;
+    // for check
+    // now statement - first if any of defined keys was clicked or not and what to do if it was clicked
+    if (e.keyCode === 37 || e.keyCode === 39) {
+        // now we need to clear for a second the interval -  to start counting from the beginning
+        clearInterval(slideInterval);
+        // now thanks to ternary operator we can define the behaviour dependend of the key pressed
+        e.keyCode === 37 ? activeSlide-- : activeSlide++;
+    }
+    // Second condition which prevents to incrementing the infinite times of time
+    if (activeSlide === slideList.length) {
+        activeSlide = 0;
+    } else if (activeSlide < 0) {
+        activeSlide = slideList.length - 1;
+    }
+    // for check
+    console.log(activeSlide);
+    // what to do on it - repeate of main function
+    singleImage.src = slideList[activeSlide].img;
+    projectTitle.innerHTML = slideList[activeSlide].title;
+    projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
+    changeIndicator();
+    slideInterval = setInterval(slideChange, slideTime);
+}
 // 1a.Function which chqanges classes on the indicarors
 const changeIndicator = () => {
     // just for check
@@ -56,6 +87,8 @@ const changeIndicator = () => {
 }
 // 1. Function which will change the slides
 const slideChange = () => {
+    // now we need to define statement when the slider should begin from the begining, but because we firstly incrementing index we need to start from the index -1 because we firstly incrementing it to '0'.
+    if (activeSlide >= slideList.length - 1) activeSlide = -1;
     //just because we have already the first element with index 0 displayed than we can start the function from incrementing index
     activeSlide++;
     // Now we can call the values of objects like that
@@ -65,13 +98,19 @@ const slideChange = () => {
     projectTitle.innerHTML = slideList[activeSlide].title;
     // Short description
     projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
-    // now we need to define statement when the slider should begin from the begining, but because we firstly incrementing index we need to start from the index -1 because we firstly incrementing it to '0'.
-    if (activeSlide >= slideList.length - 1) activeSlide = -1;
+
     // here we can implement the funcion which change the indicator
     changeIndicator();
 }
-// Set intervas can be implemented here
-setInterval(slideChange, slideTime);
-
 
 // Now implementation
+
+// Set intervas can be implemented here
+let slideInterval = setInterval(slideChange, slideTime);
+
+
+//1b. If we click onthe element we will call the EventListenet on keypress
+window.addEventListener('keydown', changeSlidesOnArrows);
+
+
+
