@@ -144,3 +144,7 @@ Typing effect - blinking cursor at the end of line
 Efekt pisania na maszynie - zmieniający się tekst
 
 Typing effect - changable text in typing
+
+# Zadanie 24 / Excercise 24 - Lekcja 79-82/Lesson 79-82
+
+Slider in javascript ES6
