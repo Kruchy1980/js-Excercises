@@ -39,13 +39,20 @@ const projectTitle = document.querySelector('.slide-title ');
 // Short description
 const projectDescriptionShort = document.querySelector('.slide-description ');
 // Indicators variable - collecting to array /nodeList of singular elements/indicators and we need to exchange it for casual array because the check method we want to use is not availible for nodeList so we need to use the square brqackets and spread operator to do that
-const indicator = document.querySelectorAll('.indicators-dots span');
+const indicators = [...document.querySelectorAll('.indicators-dots span')];
 // Functions:
 // 1a.Function which chqanges classes on the indicarors
 const changeIndicator = () => {
     // just for check
-    console.log('zmiana');
-    // first we can check which indicator has the active class
+    // console.log('zmiana');
+    // first we can check which indicator has the active class with method findIndex and callbacks boolean value
+    //So if the indicator contains/has specified class returns true and we can use the variavle for that, 
+    // It will alvays then returns the element only with class active
+    const activeIndicator = indicators.findIndex(el => el.classList.contains('active'));
+    // So if we have that element we can now toggle the class active for ''
+    indicators[activeIndicator].classList.remove('active');
+    // and now we can use our slider active index to add the class active to specified element
+    indicators[activeSlide].classList.add('active');
 }
 // 1. Function which will change the slides
 const slideChange = () => {
