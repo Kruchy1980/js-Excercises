@@ -148,3 +148,7 @@ Typing effect - changable text in typing
 # Zadanie 24 / Excercise 24 - Lekcja 79-82/Lesson 79-82
 
 Slider in javascript ES6
+
+# Zadanie 25 / Excercise 25 - Lekcja 83-87/Lesson 83-87
+
+Counter in javascript ES6
