@@ -29,7 +29,7 @@ header h2 {
 }
 
 .stoper {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0.1em;
     font-size: 1.3em;
     font-weight: bold;
@@ -38,4 +38,24 @@ header h2 {
     border-radius: 20px;
     background-color: rgba(101, 153, 22, 0.5);
     color: #680522;
+}
+
+button {
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.3em;
+    border-radius: 20px;
+}
+
+.start {
+    background-color: #00ff00;
+    color: #fff;
+}
+
+.reset {
+    background-color: #ff0000;
+    color: #fff;
+    float: right;
 }
