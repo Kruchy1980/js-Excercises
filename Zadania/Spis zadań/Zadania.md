@@ -164,3 +164,11 @@ Timer of users spend time on internet
 # Zadanie 29 / Excercise 29 - Lekcja 88/Lesson 88
 
 Actual time display
+
+# Zadanie 30 / Excercise 30 - Lekcja 89/Lesson 89
+
+Count down to the event
+
+# Zadanie 30 / Excercise 30 - Lekcja 90-91/Lesson 90-91
+
+Stoper
