@@ -23,14 +23,15 @@ header h2 {
 /* Clock */
 
 .clock {
-    margin: 5% auto;
     text-align: center;
     font-size: 2em;
+    line-height: 2em;
 }
 
-.timer {
+.count-down-timer {
     display: inline-block;
-    padding: 2%;
+    padding: 0.1em;
+    font-size: 1.3em;
     font-weight: bold;
     font-family: monospace;
     border: 1px solid #000;
