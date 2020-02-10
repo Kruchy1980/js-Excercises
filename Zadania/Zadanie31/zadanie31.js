@@ -1,61 +1,56 @@
-// Time down counter
-// Variables for display
-const timer = document.querySelector('.count-down-timer');
-// w do not need it at all it is enough just one span for display the counter
-// 1.Days
-// const daysD = document.querySelector('.d');
-// // 2. Hours
-// const hoursD = document.querySelector('.h');
-// // 3. Minutes
-// const minutesD = document.querySelector('.m');
-// // 4. Seconds
-// const secondsD = document.querySelector('.s');
-//Object/s
-// Date Objects
-// // 1.Present time shows us present time
-// const presentTime = new Date().getTime(); // shows us miliseconds which left from 01.01.1970 - whet the servers time was set
-// 2. Time  to the event - first create object which the event starts
-const finishTime = new Date('2020-06-23 13:00:15').getTime(); // so now we hae two times present and futuse so by calculating the difference beetween the times we will get the score how many miliseconds left so the largest philosofy is to calculate the seconds for  our varisbles - days, hours, minutes and seconds
-// Now we can create the variable which will be the score of difference beetween our present and event time
-// const countDownTime = finishTime - presentTime;
-//------------------------------------------------
-// Function/s
-const countDown = () => {
-    // 1.Present time shows us present time
-    const presentTime = new Date().getTime(); // shows us miliseconds which left from 01.01.1970 - whet the servers time was set
-    const countDownTime = finishTime - presentTime;
-    // The only variables we need here is that what will change so present Time and the difference
-    // So no we can calculate the times separately with knowledhe of that 1 second = 1000 miliseconds, 1 minute = 60s = 60000ms; 1 hour = 60m = 36000000; 1day = (+-)24h = 1440m = 86400s = 86400000ms;
-    // checks if it is changing
-    // console.log(countDownTime);
-    // Now we will calculate that:) 
-    // Firrstly calculate the seconds from our difference
-    //seconds
-    const seconds = Math.round(countDownTime / 1000);
-    // checks if it is changing
-    console.log(seconds);
-    // minutes
-    const minutes = Math.round(countDownTime / (1000 * 60));
-    // console.log(minutes)
-    //hours
-    const hours = Math.round(countDownTime / (1000 * 60 * 60));
-    // console.log(hours)
-    //days
-    const days = Math.round(countDownTime / (1000 * 60 * 60 * 24));
-    console.log(days)
-        //     // now we can set the values to our adequote places -  need all of that stuff
-        //     //Days
-        // daysD.innerHTML = days;
-        // //hours
-        // hoursD.innerHTML = hours;
-        // //minutes
-        // minutesD.innerHTML = minutes;
-        // //seconds
-        // secondsD.innerHTML = seconds;
-        // But if we would like to display it in one line we can do it only in one span - so we need to change the HTML code a little and some variables in js and add one variable for clock
-    timer.innerHTML = `${days}D : ${hours}h : ${minutes}m : ${seconds}s `
+//STOPER
+//Firstly variables
+//1. we can set the time which will be displayed now - initial value for 0
+let time = 0;
+//2. Display place - stoper
+const stoperDisplay = document.querySelector('.stoper');
+//3. Start/Stop button
+const startPauseButton = document.querySelector('.start');
+//4. ResetButton button
+const resetButton = document.querySelector('.reset');
+//5. Set interval ID function with no value which wi will later give to our setInterval funcrtion
+let intervalId;
+
+// now we can display the updated time so prepate the function
+// Functions:
+//1. update time
+const timeUpdater = () => {
+    // we can now update the stoper whenever function will be called
+    time++;
+    // check if it is working
+    // console.log(currentTime / 100);
+    // displaying the time in seonds and hundredths
+    stoperDisplay.textContent = (time / 100).toFixed(2);
 }
 
+//2. Start/Pause function
+const start = () => {
+    // we need to create  the if statement because we will have two conditions in here
+    // startPauseButton.textContent = 'Pause'; // so if it works we can create the second state but firstly we nee to create if statement to not complicate the button actions so the Stqrt function is connected with Start button textContent. so we can creata the first stateament as below
+    if (startPauseButton.textContent == 'Start') {
+        // we can strt the interval with it's id earlier declared
+        intervalId = setInterval(timeUpdater, 1);
+        // Than we can insert our above actions in here
+        // we check it works but still we need to change the text content of button so
+        startPauseButton.textContent = 'Pause';
+    } else {
+        // and than we need to  chabge the text content and clear interval - so lets name the interval first and clear it
+        clearInterval(intervalId);
+        // and change the textContent of button
+        startPauseButton.textContent = 'Start';
+    }
+}
 
-// Event/s / Iterval/s - we can call the function now
-setInterval(countDown, 1000);
+const reset = () => {
+    stoperDisplay.textContent = '---';
+    clearInterval(intervalId);
+    time = 0;
+    startPauseButton.textContent = 'Start';
+}
+
+//Now we can add event Listeners for buttons
+//1. Start button
+startPauseButton.addEventListener('click', start);
+
+//2. ResetButton
+resetButton.addEventListener('click', reset);
