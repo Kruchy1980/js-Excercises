@@ -169,6 +169,10 @@ Actual time display
 
 Count down to the event
 
-# Zadanie 30 / Excercise 30 - Lekcja 90-91/Lesson 90-91
+# Zadanie 31 / Excercise 31 - Lekcja 90-91/Lesson 90-91
 
 Stoper
+
+# Zadanie 32 / Excercise 32 - Lekcja 92-97/Lesson 92-97
+
+To do List
