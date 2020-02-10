@@ -20,42 +20,32 @@ header h2 {
 }
 
 
-/* Clock */
+/*  Task list */
 
-.clock {
-    text-align: center;
-    font-size: 2em;
-    line-height: 2em;
+ul li {
+    margin: 2%;
+    list-style: none;
+    font-size: 1.4em;
 }
 
-.stoper {
-    /* display: inline-block; */
-    padding: 0.1em;
-    font-size: 1.3em;
-    font-weight: bold;
-    font-family: monospace;
-    border: 1px solid #000;
-    border-radius: 20px;
-    background-color: rgba(101, 153, 22, 0.5);
-    color: #680522;
-}
+
+/* Buttons */
 
 button {
-    width: 40%;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 0.3em;
-    border-radius: 20px;
+    margin: 0 2%;
+    border-radius: 10px;
+    font-size: 1em;
 }
 
-.start {
-    background-color: #00ff00;
+
+/* Done button */
+
+.taskDone {
+    background-color: #659916;
     color: #fff;
 }
 
-.reset {
-    background-color: #ff0000;
-    color: #fff;
-    float: right;
+.removeTask {
+    background-color: #ff1122;
+    color: aliceblue;
 }
