@@ -65,7 +65,7 @@ button {
 #searcher {
     background-color: #aaa;
     border-radius: 10px;
-    text-align: center;
+    padding: 1%;
 }
 
 #searcher:focus {
