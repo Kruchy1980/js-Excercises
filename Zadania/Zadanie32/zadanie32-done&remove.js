@@ -4,7 +4,8 @@
 // let tasks = document.querySelectorAll('li');
 //1a. RemoveButton
 const removeButton = document.querySelectorAll('button[data-key].removeTask');
-//1b. Done Button
+// 2. Marking the tasks done
+//2a. Done Button
 const doneButton = document.querySelectorAll('button[data-key].taskDone');
 //Functions
 //1a. Deleting the task
@@ -21,7 +22,7 @@ const deleteTask = (e) => {
         // Now we can remove the specific  task by collecting them with the specific attribute
         document.querySelector(`li[data-key="${index}"]`).remove();
     }
-    //1b. Making the task done
+    //2. Making the task done
 const completedTask = (e) => {
     // firstly as above we need to create index because the other is scoped just for the function so we can treat it as a separate module
     const index = e.target.dataset.key;
@@ -37,5 +38,5 @@ const completedTask = (e) => {
 //1a. Now we declare the delete task event for button not when clicked on text
 removeButton.forEach(item => item.addEventListener('click', deleteTask));
 
-//1b. Marking the completed tasks
+//2. Marking the completed tasks
 doneButton.forEach(item => item.addEventListener('click', completedTask));

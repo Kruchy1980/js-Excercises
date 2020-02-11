@@ -50,3 +50,25 @@ button {
     background-color: #ff1122;
     color: aliceblue;
 }
+
+.searchingbox {
+    margin: 2%;
+    text-align: center;
+}
+
+.search {
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#searcher {
+    background-color: #aaa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#searcher:focus {
+    background-color: #111;
+    color: #fff;
+}
