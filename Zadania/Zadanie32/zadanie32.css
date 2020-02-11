@@ -20,6 +20,13 @@ header h2 {
 }
 
 
+/* body background */
+
+body {
+    background-color: #717171;
+}
+
+
 /*  Task list */
 
 ul li {
@@ -36,6 +43,7 @@ button {
     border-radius: 10px;
     font-size: 1em;
     float: right;
+    cursor: pointer;
 }
 
 
@@ -71,4 +79,34 @@ button {
 #searcher:focus {
     background-color: #111;
     color: #fff;
+}
+
+
+/* Add form */
+
+#addTaskForm {
+    width: 70%;
+    margin: 5% auto;
+}
+
+.addTaskButton {
+    font-size: 1.3em;
+    background-color: transparent;
+    color: #ff1122;
+    border: 2px groove #ff1122;
+}
+
+.addTask {
+    font-size: 1.3em;
+}
+
+
+/* Display of sum of tasks */
+
+.taskCalculator {
+    text-align: center;
+}
+
+.taskCalculator span {
+    color: #111;
 }

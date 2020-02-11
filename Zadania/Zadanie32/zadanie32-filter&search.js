@@ -37,25 +37,32 @@
 const searcher = document.querySelector('#searcher');
 //1b. Our list - because we will clear the list during searching
 const taskList = document.querySelector('ul');
-//1c. Our tasks
-const tasksItem = document.querySelectorAll('li');
+//1c. Our tasks we can use the class of created item.
+const tasksItem = document.getElementsByClassName('task');
 //2. Functions
 //2a. Search
 const searchTask = (e) => {
     // for check if it works
-    console.log(e.target.value); // it works
+    // console.log(e.target.value); // it works
     // now we know that it is case sensitive so to make it case insensitive we can now converse it to lower or upper case = let's make it to lowerCase
-    console.log(e.target.value.toLowerCase()); //it works so we need only the  content of console log
+    // console.log(e.target.value.toLowerCase()); //it works so we need only the  content of console log
     const searchText = e.target.value.toLowerCase();
+    // console.log(searchText);
     // So now we can exchange our list item Node array for casual array which allows us to use more adequote methodes eg .folter methode to this excercise
     let tasks = [...tasksItem];
+    console.log(tasks);
     // Now we can filter the tasks  by our text from input
     tasks = tasks.filter(task => task.textContent.toLowerCase().includes(searchText));
-    // just or check if search works properly
-    console.log(tasks); //if it works than we can clear our ul
+    console.log(tasks);
+    // // just or check if search works properly
+    // // console.log(tasks); //if it works than we can clear our ul
+    // //---------------- To fixing ---------------
     taskList.textContent = '';
-    // and now we can add the filtered tasks into our ul
-    tasks.forEach(task => taskList.appendChild(task));
+    // // and now we can add the filtered tasks into our ul
+    // tasks.forEach(task => taskList.appendChild(task));
+    tasks.map(task => taskList.appendChild(task));
+
+    taskList.textContent = tasks;
 }
 
 //3. EventListeners
