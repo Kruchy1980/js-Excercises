@@ -19,25 +19,28 @@
             Projekt 12/Project 12 - To do List <br /> Zadanie32/Excercise32 <br />
         </h2>
         <div>
-            <p>
-                To Do List
+
+            To Do List
             </p>
         </div>
     </header>
+    <div class="searchingbox">
+        <label for="searcher" class="search">Search Task :</label>
+        <input name="searcher" id="searcher" type="text" class="search" placeholder="Search ...">
+    </div>
     <ul>
-        <li>Zadanie 1</li>
-        <li>Zadanie 2</li>
-        <li>Zadanie 3</li>
-        <li>Zadanie 4</li>
-        <li>Zadanie 5</li>
-        <li>Zadanie 6</li>
-        <li>Zadanie 7</li>
-        <li>Zadanie 8</li>
-        <li>Zadanie 9</li>
-        <li>Zadanie 10</li>
-    </ul>
 
-    <script src="./zadanie32.js"></script>
+    </ul>
+    <form id="addTaskForm" action="">
+        <input class="addTask" type="text" placeholder="Enter task name">
+        <button class="addTaskButton">Add Task
+        </button>
+    </form>
+    <h1 class="taskCalculator">Liczba zadań: <span>0</span></h1>
+
+    <script src="./zadanie32-done&remove.js"></script>
+    <script src="./zadanie32-filter&search.js"></script>
+    <script src="./zadanie32-addItemToList.js"></script>
 </body>
 
 </html>

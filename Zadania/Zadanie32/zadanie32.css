@@ -20,42 +20,93 @@ header h2 {
 }
 
 
-/* Clock */
+/* body background */
 
-.clock {
-    text-align: center;
-    font-size: 2em;
-    line-height: 2em;
+body {
+    background-color: #717171;
 }
 
-.stoper {
-    /* display: inline-block; */
-    padding: 0.1em;
-    font-size: 1.3em;
-    font-weight: bold;
-    font-family: monospace;
-    border: 1px solid #000;
-    border-radius: 20px;
-    background-color: rgba(101, 153, 22, 0.5);
-    color: #680522;
+
+/*  Task list */
+
+ul li {
+    margin: 2%;
+    list-style: none;
+    font-size: 1.4em;
 }
+
+
+/* Buttons */
 
 button {
-    width: 40%;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 0.3em;
-    border-radius: 20px;
-}
-
-.start {
-    background-color: #00ff00;
-    color: #fff;
-}
-
-.reset {
-    background-color: #ff0000;
-    color: #fff;
+    margin: 0 2%;
+    border-radius: 10px;
+    font-size: 1em;
     float: right;
+    cursor: pointer;
+}
+
+
+/* Done button */
+
+.taskDone {
+    background-color: #659916;
+    color: #fff;
+}
+
+.removeTask {
+    background-color: #ff1122;
+    color: aliceblue;
+}
+
+.searchingbox {
+    margin: 2%;
+    text-align: center;
+}
+
+.search {
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#searcher {
+    background-color: #aaa;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#searcher:focus {
+    background-color: #111;
+    color: #fff;
+}
+
+
+/* Add form */
+
+#addTaskForm {
+    width: 70%;
+    margin: 5% auto;
+}
+
+.addTaskButton {
+    font-size: 1.3em;
+    background-color: transparent;
+    color: #ff1122;
+    border: 2px groove #ff1122;
+}
+
+.addTask {
+    font-size: 1.3em;
+}
+
+
+/* Display of sum of tasks */
+
+.taskCalculator {
+    text-align: center;
+}
+
+.taskCalculator span {
+    color: #111;
 }
