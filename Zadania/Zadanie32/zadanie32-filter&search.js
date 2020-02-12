@@ -57,12 +57,11 @@ const searchTask = (e) => {
     // // just or check if search works properly
     // // console.log(tasks); //if it works than we can clear our ul
     // //---------------- To fixing ---------------
-    taskList.textContent = '';
+    // taskList.textContent = '';
     // // and now we can add the filtered tasks into our ul
     // tasks.forEach(task => taskList.appendChild(task));
-    tasks.map(task => taskList.appendChild(task));
-
-    taskList.textContent = tasks;
+    // tasks.map(task => taskList.appendChild(task));
+    // taskList.textContent = toDoList;
 }
 
 //3. EventListeners

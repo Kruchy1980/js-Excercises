@@ -30,16 +30,20 @@ const addTask = (e) => {
     // check
     // console.log(newTask); // now we have uploaded the text so we can add it to the list as a newItem
     const newItem = document.createElement('li');
-    newItem.innerHTML = newTask + '<button class="removeTask">&#xd7;</button><button class="taskDone">&#x2713;</button>';
     // we can add the class to the list element lets name it task
     newItem.className = 'task';
+    // add the content of the new item
+    newItem.innerHTML = newTask + '<button class="removeTask">&#xd7;</button><button class="taskDone">&#x2713;</button>';
     // console.log(newItem);
     // here we can add the element to our array
-    let ourList = toDoList.push(newItem);
-    console.log(ourList);
+    toDoList.unshift(newItem);
+    // console.log(toDoList);
+    // Now we would like to clrear the table
+    renderList();
     // and after adding item we can clear the input
-    addItemInput.value = '';
     taskList.appendChild(newItem);
+    //clear input
+    addItemInput.value = '';
     // 2b. Task Counter calculator
     // We can get the list item once more
     // const itemsToDo = document.querySelectorAll('li.task');

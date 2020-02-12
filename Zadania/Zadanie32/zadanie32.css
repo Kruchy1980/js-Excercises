@@ -54,6 +54,14 @@ button {
     color: #fff;
 }
 
+
+/* Element of completed task style */
+
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
 .removeTask {
     background-color: #ff1122;
     color: aliceblue;
