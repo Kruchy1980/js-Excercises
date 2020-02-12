@@ -51,7 +51,7 @@ const addTask = (e) => {
     // console.log(itemsToDo);
     // now display the quantity of tasks in our list - all of them
     taskCalculator.textContent = tasksItem.length;
-    // we can add the done or remobe button executing in here as well like below
+    // we can add the done or remov- need to remember that it is a li part/newItem part  button executing in here as well like below
     newItem.querySelector('.removeTask').addEventListener('click', deleteTask);
     //as well as the done button element
     newItem.querySelector('.taskDone').addEventListener('click', completedTask);
