@@ -1,0 +1,27 @@
+/* All the header elements */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    line-height: 2em;
+    color: #999;
+    background-color: #111;
+    border-bottom: 1px solid #659916;
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* body background */
+
+body {
+    background-color: #717171;
+}

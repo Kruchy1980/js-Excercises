@@ -2,7 +2,11 @@
 //1. Deleting the tasks
 //1a. Downloading the elements first variable - we need to declare like below if we will use the array index to remove but better is to do it like below in deleteTask function
 // let tasks = document.querySelectorAll('li');
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// we need to create task list in here because the filter&earch file is disconnected
+const taskList = document.querySelector('ul');
+//as well as task item
+const tasksItem = document.getElementsByClassName('task');
 // We do not need the buttons in here because we are executing complete and  delete function after the creating an list item so we have not fixed buttons  in HTML yet - we will add them after creating the completly removing done tasks or all tasks not  of this file we will need it some time later when will make fully working todoList page.
 //1a. RemoveButton
 // const removeButton = document.getElementsByClassName('removeTask');
