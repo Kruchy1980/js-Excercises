@@ -25,7 +25,9 @@ const showAdvice = () => {
         console.log(choose); // if it works
         // so now we can display the answer - first color - answer = green
         answer.style.color = '#8bd819';
-        answer.textContent = `Rada dla Ciebie to: ${myAnswer[choose]}.`;
+        answer.style.textAlign = 'center';
+        answer.innerText = `Rada dla Ciebie to: \n 
+        ${myAnswer[choose]}.`;
 
     }
     //2. Show Possibilities
@@ -43,6 +45,7 @@ const showPossibility = () => {
             answer.style.textAlign = 'left';
             // and some left padding add to it
             answer.style.paddingLeft = '30px';
+            answer.style.cssText = 'border: 1px solid #34ff32';
             answer.innerText += `\n ${i + 1}. ${myAnswer[i]}`;
         }
     }
