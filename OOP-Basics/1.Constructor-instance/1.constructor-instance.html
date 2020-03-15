@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Introduction</title>
+    <link rel="icon" href="../bookmark-icon/oop-icon.jpg" type="icon/jpg">
+</head>
+
+<body>
+    <header>
+        <h1>Some informations about creating object.</h1>
+    </header>
+    <div>
+        <p><strong> Objecgt creating - object literal - it is alternative way for creating method</strong></p>
+        <pre>
+            const user =  {
+                name: "Janek",
+                age: 28,
+                showName: function() {
+                    console.log(`Cześć ${this.name}`);
+                    // this has implemented meaning in the moment of calling back the method
+                },
+                // lternative (from ES6) way of creating methodes in object
+                showAge() {
+                    console.log(`Wiek użytkownika ${this.name}, to ${this.age}`);
+                }
+            }
+        </pre>
+        <p><strong>Object creating = new + constructor Object</strong></p>
+        <pre>
+            const cat = new Object()
+
+            // after creating we are adding the property
+
+            cat.name = "fafik";
+            cat.meow = function() {
+                console.log(this.name + ": miau miau!");
+            }
+        </pre>
+        <p><strong>Creating of constructor</strong></p>
+        <pre>
+            //<em>Where:
+                <strong>Animal</strong> = project of instance
+                <strong>All thises</strong> = features of constructor where the constructor when is created purchase these features.
+            </em>
+            const Animal = function(name, species) {
+                this.name = name;
+                this.species = species;
+                this.eat = function() {
+                    console.log(this.name + 'auuu  (jakie dobre');
+                };
+            }
+        </pre>
+        <p><strong>CREATING OF OBJECT (INSTANCE)</strong></p>
+        <pre>
+            // new creates the <em>new object</em>
+            const dog = new Animal('name1', 'species1'); <em>//Object instance</em>
+            const dog2 = new Animal('name2', 'species2'); <em>//Object instance</em>
+        </pre>
+        <p><strong>Some examples of reading and changing properties of object</strong></p>
+        <pre>
+            dog.name <em>// reading of object1 property</em>
+
+            dog2.name = 'Azor' <em>// Overwriting the value of property name of object2</em>
+
+            dog2.eat() <em>// Result: 'Azor auuu (jakie dobre)" - calling back method eat() of object2 - need to remember that earlier we have changed/overwrite the name of Animal from species2 to Azor</em>
+        </pre>
+        <p><strong>Creating of instance - process</strong></p>
+        <pre>
+            const Animal = function(name, species) {
+                this.name = name;
+                this.species = species;
+                };
+            
+            const dog = new Animal('azor', 'owczarek');
+        </pre>
+        <ol>
+            <li>Operator <strong>new</strong> - creates connected with consturctor new empty object.</li>
+            <li><strong>this</strong> from now on shows the object (there is connection of <em>this</em> with new object) </li>
+            <li>New object starts to be connected with prototype of constructor function</li>
+            <li>New <strong>object is returned</strong> (and assigned, reference to that object in variable)</li>
+        </ol>
+        <h1>What is the <strong>instance</strong> and what <strong>constructor</strong> is doing.</h1>
+        <pre>
+            //Constructor (pattern, instruction)
+            const Animal = funcrion(name, species) {
+                this.name = name;
+                this.species = species;
+            }
+            //--------------------------------------
+            //Instance Creating
+            const dog = new Animal('azor', 'owczarek');
+        </pre>
+        <ul style="list-style-type: '\-';">
+            <li>Instance is an object created <em>accorcing with the constructor pattern.</em></li>
+            <li>The emerging object is an <strong>independent entity</strong> that has <strong>its own properties and methods</strong> given to it by the reference object (constructor) and <strong>has access to the methods and properties</strong> owned by
+                such reference object (by referring to the <strong>prototype of the constructor)</strong>.</li>
+            <li>In many object-oriented programming languages we have the structure as the <strong>class</strong> on which objects are created. In JavaScript, this reference structure (which is a constructor function, but also ES6 is a class) is a <strong>set
+                of instructions that are executed on the newly created object</strong>.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
