@@ -13,7 +13,61 @@
         <h1>Prototype</h1>
     </header>
     <div>
+        <p>Prototype - without using itself</p>
+        <pre>
+            const Animal = function(name) {
+                this.name = name;
+                this.children = [];
+                this.addChildren = function(childName) {
+                    this.children.push(childName)
+                };
+            };
 
+            <strong>Creating object and adding the child</strong>
+
+            const hamster = new Animal('Teofil');
+            hamster.addChildren('Korek');
+        </pre>
+        <p>Prototype - Syntax</p>
+        <pre>
+            const Animal = funcrtion(name) {
+                this.name = name;
+                this.children = [];
+            }
+            <p>Here we are creating methode outside constructor Animal thanks to <strong>prototype</strong> what won't generate the same method to each created object just can be used for objects which need to add the chold for instance.</p>
+
+            Animal.prorotype.addChildren = function(childName) {
+                this.children.push(childName);
+            }
+
+            const hamster = new Animal('Teofil');
+            hamster.addChildren('Hardy');
+        </pre>
+        <p>There is other way to do the same or more staff in one object for instance we can create constructor with properties as first than create object and after that create prototype to our object and it will work. Morover we can prototyped the property
+            but convention is to avoid it and the properties even if they are the same create in constructor not outside as a prototype. But just to show how czn it look like look below</p>
+        <pre>
+            1. Create constructor
+            const Animal = function(name) {
+                this.name = name;
+                this.children = [];
+            }
+            2. Create objects
+            const hamster = new Animal('Teofil');
+            const canary = new Animal('Singer');
+            3. Now we can create methode outside constructor but for it:
+            Animal.prototype.addChildren = function(childName) {
+                this.children.push(childName);
+            }
+            4. Now we can create any property outside constructor - rather avoid to do it and implement all properties into constructor:
+            Animal.prototype.age = 5; //just as an example
+
+            hamster.addChildren('Hardy');
+
+            //Result for age
+            canary.age // 2
+            hamster.age // 2
+
+        </pre>
     </div>
 
 </body>
