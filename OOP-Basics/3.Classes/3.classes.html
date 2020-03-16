@@ -13,7 +13,132 @@
         <h1>Classes</h1>
     </header>
     <div>
+        <p><strong>Class Creation (pattern)</strong></p>
+        <pre>
+            // Class is created altirnatively for constructor.
+            class Animal {
+                // Constructor i  class is obligatory.
+                constructtor(name, species) {
+                    this.name = name;
+                    this.species = species;
+                    this.eat = function () {
+                        console.log(this.name + ' mniam mniam :)');
+                    }
+                }
+            }
+        </pre>
+        <h2>Differencess between classes and constructors</h2>
+        <p><strong><em>Class</em></strong></p>
+        <pre>
+            class Animal {
+                constructor(name, species) {
+                    this.name = name;
+                    this.species = species;
+                    this.eat = function() {
+                        console.log(this.name + ' mniam mniam :)');
+                    }
+                }
+            }
+        </pre>
+        <p><strong><em>Constructor</em></strong></p>
+        <pre>
+            function Animal(name, specis) {
+                this.name = name;
+                this.species = species;
+                this.eat = function() {
+                    console.log(this.name + ' mniam mniam :)');
+                }
+            }
+        </pre>
+        <p><strong>Class creation - pattern cont.</strong></p>
+        <pre>
+            class Animal {
+                constructor(name, species) {
+                    this.name = name;
+                    this.species = species;
+                }
+                // For the prototype of the class such a function is added - <em>and we do not need to use the method function b4 the method name</em>:
+                eat() {
+                    console.log(this.name + ' auuu (jakie to dobre)');
+                }
+            }
+        </pre>
+        <h2>Classes and constructor with prototype diffrences.</h2>
+        <p><strong><em>Class</em></strong></p>
+        <pre>
+            class Animal {
+                constructor(name, species) {
+                    this.name = name;
+                    this.species = species;
+                }
+                // here declaring prototype inside the class: 
+                eat() {
+                    console.log('jedz ' + this.name);
+                }
+            };
+        </pre>
+        <p><strong>Take a look that the content of class is a set of <em>methodes</em>: <br> 
+        1. constructor is a method - basic method <br>
+        2. eat() is a prototype method - and can be many of them.</strong></p>
+        <br>
+        <p><strong><em>Constructor with prototype</em></strong></p>
+        <pre>
+            function Animal (name, species) {
+                this.name = name;
+                this.species = species;
+            }
+            // and here separately/outside of constructor we are creating prototype: 
+            Animal.prototype.eat = function() {
+                console.log('jedz ' + this.name);
+            };
+        </pre>
+        <p><strong><em>Crating of class instance</em></strong></p>
+        <pre>
+            const dog = new Animal('Reksio', 'Kundel bury');
 
+            // Syntax is the same as with the constructor and the same working mechanisms
+            
+            typeof Animal //'Function' - the class is a function
+        </pre>
+        <h2>This - object connection</h2>
+        <p><strong>this</strong> is a mechanism in JavaScript which can be unpredictible for us ;)</p>
+        <p>Thanks to <strong>this</strong> our code is more uninversal.</p>
+        <p><strong>Example:</strong></p>
+        <p><em>Take <strong><em>this</em></strong> what you have in your hand and toss(podrzuć)</em> is more universal than:</p>
+        <p>Take the <strong>apple</strong> which you have in your hand and toss.</p>
+        <p>Take the <strong>keys</strong> which you have in your hand and toss. and many more...
+        </p>
+        <h2>This - example</h2>
+        <pre>
+            btn.addEventListener('click', function() {
+                this.classList.toggle('on');
+            })
+
+            // <strong>this</strong> is refered to the button /object where the function is executed - <em>btn</em>.
+
+            // Take a look that the same function can be executed on <em>many elements</em>, is <strong>universal</strong>, because <strong>connection with that object acts in a moment of calling back the function not in the moment of <em>creating</em> that function.</strong> - <strong>em It is needed to be remembered</strong>.
+        </pre>
+        <h2>This in arrow function</h2>
+        <pre>
+            btn.addEventListener('click', () => {
+                this.classList.toggle('on');
+            })
+
+            // <strong><em>this</em></strong> is refered to the global object because arrow function does not creates the own connection <em>this</em> just takes it over the higheer scope (so if addEventListener in in the global scope than from that global scope).
+        </pre>
+        <p><strong><em>this - another example</em></strong></p>
+        <pre>
+            const car =  {
+                name: 'Polonez',
+                year: 1999,
+                age() {
+                    console.log(`Wiek samochodu, to ${2020 - this.year} lat.)
+                }
+            }
+            // calling back the age:
+            car.age() // 'Wiek samochodu, to 21 lat.'
+        </pre>
+        <p><strong><em>this</em></strong> will be reffered to the car object but remember that (connection, object definition) will appear in a moment of executing the method so in here <em>cr.age()</em></p>
     </div>
 
 </body>
