@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Enapsulation</title>
+    <link rel="icon" href="../bookmark-icon/oop-icon.jpg" type="icon/jpg">
+</head>
+
+<body>
+    <header>
+        <h1>Encapsulation</h1>
+    </header>
+    <div>
+        <p><strong>Encpsulation</strong> is responsible for:
+            <br> 1. Grouping methodes and properties in object.
+            <br> 2. Controlling of access should be done by obejct itself.
+            <br> 3. Using methodes get and set in objects to control dara flow in it.
+            <br> 4. Hiding implementation by object and giving access for other object with interface - which is public.
+        </p>
+        <p><strong><em>Encapsulation - example</em></strong>
+        </p>
+        <pre>
+            Math.floor(2.22);
+
+            // We do not care about implementtion and we do not have the access for it. The inrerface for an object <em>math</em> in an object method - <strong>floor</strong> in that case.
+        </pre>
+        <p><strong><em>Not hidden data (minimal encapsulation connected with datas without hinding them) - example</em></strong>
+        </p>
+        <pre>
+            const user = {
+                age: 20 // the value is not protected - can be changed
+            }
+            // We can change the value of object
+            user.age - 21; // value change.
+        </pre>
+    </div>
+
+</body>
+
+</html>
