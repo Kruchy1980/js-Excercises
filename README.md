@@ -13,7 +13,7 @@ Here you will find information on individual elements of the JavaScript language
 
 
 # Theory-Basics
-W tym katalogu znajdują się teoretyczne informacje na temat poszczególnych elementów języka *JavaScript*, jak i też programowania *proceduralnego.* - **jeszcze do uzupełnienia.**
+W tym katalogu znajdują się teoretyczne informacje na temat poszczególnych elementów języka *JavaScript*, jak i też *programowania proceduralnego.* - **jeszcze do uzupełnienia.**
 
 This directory contains theoretical information on individual elements of the *JavaScript* language, as well as *procedural programming.* - **under construction.**
 
