@@ -1,1 +1,12 @@
-console.log('Hello it is me bro:) - part 2 for later');
+//CLASS PART 2
+
+// 1.CLASSES AND INHERITANCE.
+
+// 2.CREATING OF INHERITN CLASS PROTOTYPEC.
+
+// 3.CALING OF CONSTTUCROR OF SUPERCLASS.
+
+
+// 4.EXTENDS.
+
+// 5.SUPER.
