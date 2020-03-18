@@ -9,3 +9,18 @@ console.log(janek);
 Player.prototype.height = '185 cm';
 // if we won't what is in the player constructor we can easily checks wht is in janek's __proto__ prototype like below.
 console.log(janek.__proto__);
+
+// ADDING ELEMENTTS TO PROTOTYPE(CONSTRUCROR).
+// Create constructor - Citizen
+function Citizen(country, citizenship) {
+    // Properties for instances
+    this.country = country;
+    this.citizenship = citizenship;
+    // methode for changing citizenship (inside constructor - not indicated/wskazane to create inside constructor)
+    this.citizenshipChange = function(citizenshipNew) {
+        this.citizenship = citizenshipNew;
+        console.log(`Zmieniono obywatelstwo na: ${citizenshipNew} za pomocą metod w instancji.`);
+    }
+}
+// Citizen Creation
+const albert = new Citizen('Poland', 'polskie');
