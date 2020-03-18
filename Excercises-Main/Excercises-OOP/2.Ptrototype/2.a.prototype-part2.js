@@ -24,3 +24,11 @@ function Citizen(country, citizenship) {
 }
 // Citizen Creation
 const albert = new Citizen('Poland', 'polskie');
+// check
+console.log(albert);
+console.log(albert.citizenship);
+// Changing citizenship
+albert.citizenshipChange('angielskie');
+// check
+console.log(albert);
+console.log(albert.citizenship);
