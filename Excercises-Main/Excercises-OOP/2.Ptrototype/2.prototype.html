@@ -20,12 +20,38 @@
         <p><strong>What the prototype includes:</strong></p> <br>
         <p>The prototype includes defined properties of constructor (constructor function or clalss) + all the things which will be assigned to the prototoype.</p> <br>
         <h3>Adding elements to prototype (Constructor)</h3> <br>
-        <p></p>
+        <p>The properties/elements can be easily added to the prototype by executing such a command.</p>
+        <p><strong>(constructor->.prototype.->.propertyName = value of property)</strong> - we should rather to avoid ti do it nowadays and the classes won't let us do it. </p> <br>
+        <pre>
+            Citizen.prototype.age = 18; 
+            
+            // That is all about adding properties to the prototypes
+        </pre>
+        <p><strong>Coverage / Przysłanianie</strong></p><br>
+        <p>Coverage is a simple covering one method by other with the same name. Methodes declared directly inside constructor have larger rank that these in prototype so if methodes inside constructor and prototype have the same name that eecuted will be
+            the one which is declared inside the constructor.</p> <br>
+        <p><strong>Extending prototypes of embedded objects.</strong></p> <br>
+        <p>By creating new method in object prototype we can executed any ation on the array just by the prototype method - the extension of object prototype method is located in 2.a.prototype-psrt2.js file from line 74 till the end of file.</p> <br>
+        <h3>PROTOTYPE PART 3 - PROTOTYPES CHAIN + Instanceof, Object.getPrototypeOf and some informations about connection between Instance and Constructor/Class prototype.</h3> <br>
+        <p>Prototype chain is taking over any object method or propertis from deeper places of prototype of the method or property - clearlier explanation in 2.b.prototype-part3.js file.</p> <br>
+        <p><strong>Instanceof</strong></p>
+        <br>
+        <p>Lets us check if the element/object is instance of other object.
+        </p>
+        <br>
+        <p><strong>OBJECT.GETPROTOTYPEOF</strong></p> <br>
+        <p>Checks What is the prototype of element/object/instance. We need to remember that an element is related to the object/Object constructor throuht the prototype like showed below</p> <br>
+        <pre>
+            <em>arr</em> -> <strong>prototype</strong> -> <strong><em>Array</em></strong>
+        </pre> <br>
+        <p><strong>!!! Need to remember,</strong> <br> The element wich connects our object with constructor/class is the prototype which contains the information what the constructor is.</p>
+
     </section>
 
-    <!-- javas connection -->
-    <!-- <script src="../2.Ptrototype/2.prototype.js"></script> -->
-    <script src="../2.Ptrototype/2.a.prototype-part2.js"></script>
+    <!-- javas connections-->
+    <script src="./2.prototype.js"></script>
+    <script src="./2.a.prototype-part2.js"></script>
+    <script src="./2.b.prototype-part3.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Classes</title>
+    <!-- Bookmark Icon -->
+    <link rel="icon" href="../bookmark-icon/oop-icon.jpg" type="icon/jpg">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./3.class.css">
+</head>
+
+<body>
+    <header>
+        <h1>Classes</h1>
+    </header>
+    <section class="main">
+        <h3><strong>Class - What is it in JS??</strong></h3> <br>
+        <p>Classes appeared in JavaScript together with ES6 version in 2015th. Class we can say that is a box/container for constructor and all its methodes and properties which lets us keep code more eye/user/programmer ;) friendly. Class is a such an element
+            which lets us use such a behaviours like inheritance, encapsulation or polymorphism</p> <br>
+
+        <p><strong>How to create Class</strong></p> <br>
+        <p>Creating class we are starting with key word class lowercase written <small>- more practical information in 3.class-part1.js file from line 7.</small></p> <br>
+
+        <p><strong>Class - Prototype</strong></p> <br>
+        <p>As same as in constructor we can add method to the constructor of class and than by creating object every of them will have the same methodes.</p> <br>
+        <p>OR</p> <br>
+        <p> // Or we can add the method as a prototype in class under the constructor and than the instance which will really need it will have the prototype, beside the queue of executing the methodes is the same like in constructor so first is executed
+            from class construftor and if it is not there than the prototype will be searched for the methode so the coverage will appeare as same as levels of embedded methodes.
+        </p> <br>
+        <p><strong>Constructor function and Class</strong></p> <br>
+        <p>The difference between the two constructors is only that that the class is a box for constructors ant its methodes, but the construcror itself cane contain the properties and methodes being created separately.</p> <br>
+        <p><strong>Class - Expression</strong></p> <br>
+        <p>he class expression is jus different type of class declaration</p> <br>
+        <pre>
+            const ClassName = class {...}
+        </pre> <br>
+        <p><strong>Class - Static Methodes </strong></p> <br>
+        <p>That methodes are assigned directly to the class. Satic methodes are availible only from the level of class/constructor.</p> <br>
+        <p><strong>Class - it is worth to remember about them.</strong></p> <br>
+        <pre>
+            // 1. Are not subject to hoisting/ nie podlegają hoistingowi.
+
+            // 2. Smaller possibilities of making mistakes eg there is no possible to make instance without word new/ mniejsze mozliwości popełnienia błędu choćby nie da się wywołać bez new
+
+            // 3. Are clearlier than construcrors itself / są czytelniejsze
+
+            // 4. Theere is more simple to code some things like inheritance for example by prefix extends / uproszczenie w napisaniu wielu innych rzeczy jako np. dziedziczenie (extends).
+
+            // 5. What can be coced thanks to class may be coded in ES6 pure as well but with classes it is easier / co da się napisać za pomocą klasy, mozna też napisać w ES6, ale jest to bardziej (lub zdecydowanie bardziej) zawiłe. Tu jest proste.
+        </pre>
+    </section>
+
+    <!-- javas connection -->
+    <script src="./3.class-part1.js"></script>
+    <script src="./3.a.class-part2.js"></script>
+</body>
+
+</html>
