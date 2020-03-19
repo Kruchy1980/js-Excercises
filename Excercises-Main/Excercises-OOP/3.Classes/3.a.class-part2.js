@@ -106,10 +106,10 @@ human.walkLearning();
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// // But if we would like to use that properties from human to animal or mammal it won't work
-// mammal3.walkLearning(); // rewsult walkLearning is not a function
-// // and animal
-// animal.walkLearning(); // rewsult walkLearning is not a function
+// But if we would like to use that properties from human to animal or mammal it won't work
+mammal3.walkLearning(); // rewsult walkLearning is not a function
+// and animal
+animal.walkLearning(); // rewsult walkLearning is not a function
 // As we can see the classes are inherited the methodes only above as same as the properties
 const mammal4 = new Mammal(10, 'jeż', 'dark', '25 cm');
 // check
