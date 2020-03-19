@@ -32,6 +32,11 @@ header h1 {
     width: 80%;
 }
 
+.main h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 
 /* small style */
 
