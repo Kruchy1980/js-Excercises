@@ -19,7 +19,8 @@
         <h2>Part 1</h2><small>- more practical information in 4.this-part1.js file from line 7.</small>
         <hr>
         <p><strong>What is 'this' ;)??</strong></p><br>
-        <p>In Simply words this is a connection with some objects. This let's us to callbact to the object. </p>
+        <p>In Simply words, this is a connection with some objects. This let's us to callback to the object. JS according to results assigned to this the connection with object. What the this is exactly the source decides. Assignement of the object to 'this'
+            appears always in the moment of function callback - defined the character is not public. 'This' creates a context (object to which we can callaback inside the code).</p>
         <br>
         <p><strong>Situations when we can meet with this</strong></p> <br>
         <pre>
@@ -37,22 +38,46 @@
             the strict mode because it is implemented automatically in a critical situations.
         </p>
         <br>
-        <p><strong></strong></p><br>
-
-        <br>
         <h2>Part 2</h2><small>- more practical information in 4.a.this-part2.js file from line 7.</small>
         <hr>
         <p><strong>Why 'this' is needed??</strong></p><br>
+        <p>'This' gives us no need of using precison functions(separate for each object).</p>
+        <pre>
+            1.It let's us to use the same function multiple.
+            2. Code is cleared and easier to being edited  eg  
 
+            function
+            function showName() {
+                this.name
+            }
+
+            Object 1
+            const kate = {
+                name: 'Kate',
+                showName: showName,                
+            }
+            Object 2
+            const michael = {
+                name: 'Michael',
+                showName: showName,                
+            }
+            Check the name of objects
+            kate.showName(); //result display name of Object 1
+            michael.showName(); //result display name of Object 2            
+        </pre>
+        <p>So we can see that once declared function showName is used to each of object thanks to 'this' word.</p>
+        <br>
+        <p><strong>When the connection with this arises??</strong></p><br>
+        <p>The connection of this zrises in the moment of executing method and is not dependend of place of function declaration. In a moment of function execution the execution context appears and is a part of 'this'.</p>
         <br>
         <h2>Part 3</h2><small>- more practical information in 4.b.this-part3.js file from line 7.</small>
         <hr>
-        <p><strong>When the connection with this arises??</strong></p><br>
+        <p><strong></strong></p><br>
 
         <br>
         <h2>Part 4</h2><small>- more practical information in 4.b.this-part3.js file from line 7.</small>
         <hr>
-        <p><strong>How the connection with this arises(rules)??</strong></p><br>
+        <p><strong></strong></p><br>
 
         <br>
 
