@@ -68,25 +68,39 @@
         <p>So we can see that once declared function showName is used to each of object thanks to 'this' word.</p>
         <br>
         <p><strong>When the connection with this arises??</strong></p><br>
-        <p>The connection of this zrises in the moment of executing method and is not dependend of place of function declaration. In a moment of function execution the execution context appears and is a part of 'this'.</p>
+        <p>The connection of this arises in the moment of executing method and is not dependend of place of function declaration. In a moment of function execution the execution context appears and is a part of 'this'.</p>
+        <br>
+        <p><strong>Summary now</strong></p>
+        <br>
+        <p> The source of arising 'this' is the call back of function/method. The connection rises undependendly of if in the function are we using this(as similar as with using event, and we can but no need to use it) </p>
         <br>
         <h2>Part 3</h2><small>- more practical information in 4.b.this-part3.js file from line 7.</small>
         <hr>
-        <p><strong></strong></p><br>
-
+        <p><strong>The rules of arising this</strong></p>
         <br>
-        <h2>Part 4</h2><small>- more practical information in 4.b.this-part3.js file from line 7.</small>
+        <p>The rules: </p>
+        <br>
+        <pre>
+            1. The defined connection of this is a global object unless we are using the strict mode which won't let to be like that (undefined will be).
+            2. The connection is clasified - What is an object of context, wjat is the source.
+            3. Te Explicit bindin/connection - Simply we can tell to te function with what should it bind the this - the call and apply metodes.
+            4. Hard binding - that is a binding which has fixed this - is created permanently.
+            5. Binding with operator 'new' - appeares when the object is created and all the properties and methodesin  constructor/class constructor are assigned to the instance/object.
+            6. Arrow function and this - Arrow function does not creating during the call back it own binding/connection with this but inherits it.
+        </pre>
+        <br>
+        <h2>Part 4</h2><small>- more practical information in 4.c.this-part3.js file from line 7.</small>
         <hr>
-        <p><strong></strong></p><br>
+        <p><strong>Loose of binding problems</strong></p><br>
 
         <br>
 
     </section>
 
     <!-- javas connection -->
-    <script src="./4.this-part1.js"></script>
-    <script src="./4.a.this-part2.js"></script>
-    <script src="./4.b.this-part3.js"></script>
+    <!-- <script src="./4.this-part1.js"></script> -->
+    <!-- <script src="./4.a.this-part2.js"></script> -->
+    <!-- <script src="./4.b.this-part3.js"></script> -->
     <script src="./4.c.this-part4.js"></script>
 </body>
 
