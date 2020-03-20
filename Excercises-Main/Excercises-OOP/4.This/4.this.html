@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+// THE LOOSE BINDING PROBLEMS //ml lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -91,8 +90,16 @@
         <br>
         <h2>Part 4</h2><small>- more practical information in 4.c.this-part3.js file from line 7.</small>
         <hr>
-        <p><strong>Loose of binding problems</strong></p><br>
-
+        <p><strong>Loose of binding problems</strong></p>
+        <br>
+        <pre>
+            The problema appeares when:
+            1.that = this - is to asign the this to another name:
+            const that = this;
+            2. Without function - with for of loop.
+            3. Arrow function - does not creating the this just inherits it from the object.
+            4. Bind - changes existing function for similar with binded this inside.
+        </pre>
         <br>
 
     </section>
