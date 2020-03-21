@@ -16,29 +16,41 @@
         <h1>Classes</h1>
     </header>
     <section class="main">
-        <h3><strong>Class - What is it in JS??</strong></h3> <br>
+        <h2>Part 1</h2><small>- more practical information in 3.class-part1.js file from line 7.</small>
+        <hr>
+        <h3><strong>Class - What is it in JS??</strong></h3>
+        <br>
         <p>Classes appeared in JavaScript together with ES6 version in 2015th. Class we can say that is a box/container for constructor and all its methodes and properties which lets us keep code more eye/user/programmer ;) friendly. Class is a such an element
-            which lets us use such a behaviours like inheritance, encapsulation or polymorphism</p> <br>
-
-        <p><strong>How to create Class</strong></p> <br>
-        <p>Creating class we are starting with key word class lowercase written <small>- more practical information in 3.class-part1.js file from line 7.</small></p> <br>
-
-        <p><strong>Class - Prototype</strong></p> <br>
+            which lets us use such a behaviours like inheritance, encapsulation or polymorphism</p>
+        <br>
+        <p><strong>How to create Class.</strong></p>
+        <br>
+        <p>Creating class we are starting with key word class lowercase written.</p>
+        <br>
+        <p><strong>Class - Prototype.</strong></p>
+        <br>
         <p>As same as in constructor we can add method to the constructor of class and than by creating object every of them will have the same methodes.</p> <br>
-        <p>OR</p> <br>
+        <p>OR</p>
+        <br>
         <p> // Or we can add the method as a prototype in class under the constructor and than the instance which will really need it will have the prototype, beside the queue of executing the methodes is the same like in constructor so first is executed
             from class construftor and if it is not there than the prototype will be searched for the methode so the coverage will appeare as same as levels of embedded methodes.
-        </p> <br>
-        <p><strong>Constructor function and Class</strong></p> <br>
-        <p>The difference between the two constructors is only that that the class is a box for constructors ant its methodes, but the construcror itself cane contain the properties and methodes being created separately.</p> <br>
-        <p><strong>Class - Expression</strong></p> <br>
+        </p>
+        <br>
+        <p><strong>Constructor function and Class.</strong></p>
+        <br>
+        <p>The difference between the two constructors is only that that the class is a box for constructors ant its methodes, but the construcror itself cane contain the properties and methodes being created separately.</p>
+        <br>
+        <p><strong>Class - Expression.</strong></p> <br>
         <p>he class expression is jus different type of class declaration</p> <br>
         <pre>
             const ClassName = class {...}
-        </pre> <br>
-        <p><strong>Class - Static Methodes </strong></p> <br>
-        <p>That methodes are assigned directly to the class. Satic methodes are availible only from the level of class/constructor.</p> <br>
-        <p><strong>Class - it is worth to remember about them.</strong></p> <br>
+        </pre>
+        <br>
+        <p><strong>Class - Static Methodes.</strong></p> <br>
+        <p>That methodes are assigned directly to the class. Satic methodes are availible only from the level of class/constructor.</p>
+        <br>
+        <p><strong>Class - it is worth to remember about them.</strong></p>
+        <br>
         <pre>
             // 1. Are not subject to hoisting/ nie podlegają hoistingowi.
 
@@ -50,6 +62,30 @@
 
             // 5. What can be coced thanks to class may be coded in ES6 pure as well but with classes it is easier / co da się napisać za pomocą klasy, mozna też napisać w ES6, ale jest to bardziej (lub zdecydowanie bardziej) zawiłe. Tu jest proste.
         </pre>
+        <br>
+        <h2>Part 2</h3><small>- more practical information in 3.a.class-part2.js file.</small>
+            <hr>
+            <p><strong>Classes and Inheritance of child class/subclass prototype.</strong></p>
+            <br>
+            <p>The parent class/super class is a class from which the child class/sub class inherits properties and methodes. The superclass contains the properties and methodes which can be 'borrowed' to the child classes/subclasses.</p>
+            <br>
+            <p><strong>Creating of inherit class prototype.</strong></p>
+            <br>
+            <p> During the inheritance there is a prototype chain appeared - it means that every subclasses has connection to each other by the superclass prototypes.</p>
+            <br>
+            <p><strong> Calling of constructor of superclass. </strong></p>
+            <br>
+            <p>The constructor of superclass is called in the subclass/es that is why the subclass/es have the access to every properties and methodes from superclass, moreover we can add any method by creating the prototypes inside the subclasses - remember
+                about line of inheritance (always from parent class).</p>
+            <br>
+            <p><strong>Extends.</strong></p>
+            <br>
+            <p>The keyword which shows the parent class from which the subclass will be inherited any elements. Creating object from subclass is equal to calling the constructor of superclass as well.</p>
+            <br>
+            <p><strong>Super.</strong></p>
+            <br>
+            <p>The keyword is used for extend the constructor of subclass/es and all other 'higher' subclasses by constructor of superclass.</p>
+            <br>
     </section>
 
     <!-- javas connection -->
