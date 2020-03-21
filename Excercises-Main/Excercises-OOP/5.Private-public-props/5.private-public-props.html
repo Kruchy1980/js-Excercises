@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>5.Private and Public properties...</title>
     <!-- Bookmark Icon -->
-    <link rel="icon" href="../bookmark-icon/oop-icon.jpg" type="icon/jpg">
+    <link href="../bookmark-icon/oop-icon.jpg" rel="icon" type="icon/jpg" />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./5.private-public-props.css">
+    <link href="./5.private-public-props.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -16,33 +15,56 @@
         <h1>Private and Public properties, Convention, Closures</h1>
     </header>
     <section class="main">
-        <h2>Private and Public properties, Convention, Closures</h2><small>- more practical information in 5.private-public-props.js file.</small>
-        <hr>
-        <p><strong>Private and Public Properties</strong></p>
-        <br>
-        <p></p>
-        <br>
-        <p><strong>Hiding Data.</strong></p>
-        <br>
-        <p></p>
-        <br>
-        <p><strong>Convention.</strong></p>
-        <br>
-        <p></p>
-        <br>
-        <p><strong>Closures usage.</strong></p>
-        <br>
-        <p></p>
-        <br>
-    
-    
+        <h2>Private and Public properties, Convention, Closures</h2>
+        <small>- more practical information in 5.private-public-props.js file.</small>
+        <hr />
+        <p>
+            <strong>Private and Public Properties</strong>
+        </p>
+        <br />
+        <p>
+            All the methodes and properties of objects are public in definition,
+            but we sometimes want and can make them private. It is connected
+            with encapsulation of data.
+        </p>
+        <br />
+        <p>
+            <strong>Hiding Data.</strong>
+        </p>
+        <br />
+        <p>
+            We have two methodes to hide data of our objects.
+            One is
+            <em>Convention</em> and the second one is the usage of
+            the
+            <em>Closures</em>.
+        </p>
+        <br />
+        <p>
+            <strong>Convention.</strong>
+        </p>
+        <br />
+        <p>The mechanism do not really hides the data but informs the programmers
+            that the data are private so do not change them directky inside the object. </p>
+        <br />
+        <p>
+            <strong>Closures usage.</strong>
+        </p>
+        <br />
+        <p>That is the second method of hiding object data
+            by using closures of data in methodes/functions.
+            If the interface is created we can use our property
+            which won't exists when the interface - our class will be erased.
+            <strong>Need to remember that methodes used to get or set private 
+                datas need to be created inside the <em>Constructor</em> <u>not</u>
+                the <em>Prototype</em>.
+            </strong>
+        </p>
+        <br />
     </section>
 
     <!-- javas connection -->
-    <script src="./4.this-part1.js"></script>
-    <script src="./4.a.this-part2.js"></script>
-    <script src="./4.b.this-part3.js"></script>
-    <script src="./4.c.this-part4.js"></script>
-</body>
+    <script src="./5.private-public-props.js"></script>
 
+</body>
 </html>
