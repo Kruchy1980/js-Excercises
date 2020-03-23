@@ -63,7 +63,7 @@ console.log(wallet.changeWalletContent(10, '+'));
 // Decremential
 console.log(wallet.changeWalletContent(100, '-'));
 // Error check of inner data - comment if you want to notice next error
-console.log(wallet.changeWalletContent(10, 'dupa'));
+console.log(wallet.changeWalletContent(10, 'cos'));
 // Error check of input data  != Number - comment if you want to notice next error
 console.log(wallet.changeWalletContent('10', '+'));
 // Check if NaN will be errored as well - comment if you want to check the methodes corredt work
