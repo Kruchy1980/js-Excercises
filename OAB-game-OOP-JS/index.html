@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <!-- Styles  -->
     <link rel="stylesheet" href="./css/main-style.css">
-    
+
 </head>
 
 <body>
     <header>
+        <!-- Main header -->
         <h1>Jednoręki bandyta</h1> <span>Gra utworzona w JavaScript za pmocą programowania zorientowanego obiektowo.</span>
     </header>
     <section class="stars">
@@ -25,6 +26,31 @@
         <span>&starf;</span>
         <span>&starf;</span>
     </section>
+    <!-- Display boxes -->
+    <section class="main-box">
+        <article class="box-container">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </article>
+
+        <!-- Play section -->
+        <section class="play">
+            <input type="number" id="bid" placeholder="Podaj stawkę">
+            <p id="start">Zakręć!</p>
+        </section>
+        <!-- Your wallet info -->
+        <section class="info">Twoje Srodki Przed kolejną grą to: <span class="your-wallet"></span></section>
+        <!-- Game Information infos -->
+        <section class="score">
+            <span class="result"></span>
+            <span class="statistics"></span>
+        </section>
+    </section>
+    <footer>&copy; 2020 💟 Utworzone przez Jakub Kruszyński 🇵🇱 </footer>
+    <script src="./scripts/wallet.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
