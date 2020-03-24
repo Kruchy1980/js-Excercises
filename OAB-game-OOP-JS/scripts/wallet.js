@@ -10,8 +10,8 @@ class Wallet {
         //Getting the wallet content
         this.getWalletValue = () => _money; // arrow function returns the parameter.variable we want to use so now we can use it to check what is our wallet account
 
-        // Check if there is enough money for seet the bit
-        // The method will check if there is enough money by comparing bit from input and our wallet value
+        // Check if there is enough money for seet the bid
+        // The method will check if there is enough money by comparing bid from input and our wallet value
         this.checkPlayingPossibility = value => {
                 // Just because we are returning one parameter there is no need to use the curly brackets
                 if (_money >= value) return true;
@@ -25,11 +25,11 @@ class Wallet {
             if (typeof value === 'number' && !isNaN(value)) {
                 // if type = + it means that we want to add the value to our wallet
                 if (type === '+') {
-                    // than increase our wqallet by the bit value
+                    // than increase our wqallet by the bid value
                     return _money += value;
                     // else  if our type  = - 
                 } else if (type === '-') {
-                    // Than decrease our wallet by the bit value
+                    // Than decrease our wallet by the bid value
                     return _money -= value;
                     // If not any of cses above
                 } else {
@@ -48,23 +48,24 @@ class Wallet {
 
 }
 
-// Here we can set the instance of wallet for check and create our basic first wallet
-const wallet = new Wallet(1000);
-// Checking and logging the wallet value by usung on object the methoode  getWalletValue
-console.log(wallet.getWalletValue());
-// Just for now checking if the checkPlayuinPossibility method is working
-// We will check the border values from top extreme
-console.log(wallet.checkPlayingPossibility(1001));
-console.log(wallet.checkPlayingPossibility(1000));
-console.log(wallet.checkPlayingPossibility(999));
-// Check the change wallet content
-// Incremential
-console.log(wallet.changeWalletContent(10, '+'));
-// Decremential
-console.log(wallet.changeWalletContent(100, '-'));
-// Error check of inner data - comment if you want to notice next error
-console.log(wallet.changeWalletContent(10, 'cos'));
-// Error check of input data  != Number - comment if you want to notice next error
-console.log(wallet.changeWalletContent('10', '+'));
-// Check if NaN will be errored as well - comment if you want to check the methodes corredt work
-console.log(wallet.changeWalletContent(NaN, '+'));
+// In a game usage we do not need that this is only fo checking when the game is under construction
+// // Here we can set the instance of wallet for check and create our basic first wallet
+// const wallet = new Wallet(1000);
+// // Checking and logging the wallet value by usung on object the methoode  getWalletValue
+// console.log(wallet.getWalletValue());
+// // Just for now checking if the checkPlayuinPossibility method is working
+// // We will check the border values from top extreme
+// console.log(wallet.checkPlayingPossibility(1001));
+// console.log(wallet.checkPlayingPossibility(1000));
+// console.log(wallet.checkPlayingPossibility(999));
+// // Check the change wallet content
+// // Incremential
+// console.log(wallet.changeWalletContent(10, '+'));
+// // Decremential
+// console.log(wallet.changeWalletContent(100, '-'));
+// // Error check of inner data - comment if you want to notice next error
+// // console.log(wallet.changeWalletContent(10, 'cos'));
+// // Error check of input data  != Number - comment if you want to notice next error
+// // console.log(wallet.changeWalletContent('10', '+'));
+// // Check if NaN will be errored as well - comment if you want to check the methodes corredt work
+// // console.log(wallet.changeWalletContent(NaN, '+'));
