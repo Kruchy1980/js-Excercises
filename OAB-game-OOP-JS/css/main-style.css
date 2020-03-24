@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
 }
 
 
@@ -25,7 +26,6 @@ header {
     color: #bbb;
     border-bottom: 1px solid linear-gradient(to right, #a51569, #d3d31b, #dd2222e7);
     border-radius: 0 0 20px 20px;
-    font-family: 'Bree Serif', serif;
     font-size: 16px;
 }
 
@@ -154,7 +154,6 @@ header span {
     margin: 5% auto;
     width: 70%;
     max-width: 300px;
-    font-family: 'Bree Serif', serif;
     font-size: 32px;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px #000;
@@ -176,13 +175,30 @@ header span {
 /* Main info display */
 
 .info {
-    font-size: 0.8em;
+    margin: 5% 0;
+    font-size: 20px;
     text-transform: uppercase;
     color: #002000;
     text-align: left;
     background: #ffff00;
     border-radius: 12px;
     padding: 2%;
+}
+
+
+/* Statistics result: */
+
+.score {
+    width: 60%;
+    margin: 3%;
+    text-align: left;
+}
+
+
+/* Text lines */
+
+.score p {
+    font-size: 20px;
 }
 
 

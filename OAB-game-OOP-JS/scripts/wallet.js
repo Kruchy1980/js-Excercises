@@ -34,14 +34,14 @@ class Wallet {
                     // If not any of cses above
                 } else {
                     // throw an error to console
-                    throw new Error('Działanie nieprawidłowe');
+                    throw new Error(`${typeof type} Działanie nieprawidłowe`);
                 }
                 // continuation of first if so if the value won't be a number
             } else {
                 // show in console type of value
-                console.log(typeof value);
+                // console.log(typeof value);
                 // and throw an error as well
-                throw new Error('To nie jest numer!');
+                throw new Error(`${typeof value} - To nie jest numer!`);
             }
         }
     }
@@ -49,8 +49,9 @@ class Wallet {
 }
 
 // In a game usage we do not need that this is only fo checking when the game is under construction
+
 // // Here we can set the instance of wallet for check and create our basic first wallet
-// const wallet = new Wallet(1000);
+const wallet = new Wallet(1000);
 // // Checking and logging the wallet value by usung on object the methoode  getWalletValue
 // console.log(wallet.getWalletValue());
 // // Just for now checking if the checkPlayuinPossibility method is working
