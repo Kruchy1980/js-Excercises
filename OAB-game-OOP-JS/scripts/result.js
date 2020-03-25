@@ -31,17 +31,17 @@ class Result {
     }
 
 }
-// The code below is needed onlu for check it the methodes are working
-// For check we can callback the result method
-// Result.show();
-// Check if the moneyWonQuantity method works
-//  If we won
-console.log(Result.moneyWonQuantity(true, 4))
-    //  If we lose
-console.log(Result.moneyWonQuantity(false, 8))
-    // check if the second method works
-console.log(Result.checkWinnerResult([{ link: 1, name: 2 }, { link: 1, name: 2 }, { link: 1, name: 2 }]));
-// or
-console.log(Result.checkWinnerResult([{ link: 1, name: 1 }, { link: 2, name: 2 }, { link: 3, name: 3 }]));
-// If condition is not met
-console.log(Result.checkWinnerResult([{ link: 2, name: 2 }, { link: 1, name: 1 }, { link: 2, name: 2 }]));
+// // The code below is needed onlu for check it the methodes are working
+// // For check we can callback the result method
+// // Result.show();
+// // Check if the moneyWonQuantity method works
+// //  If we won
+// console.log(Result.moneyWonQuantity(true, 4))
+//     //  If we lose
+// console.log(Result.moneyWonQuantity(false, 8))
+//     // check if the second method works
+// console.log(Result.checkWinnerResult([{ link: 1, name: 2 }, { link: 1, name: 2 }, { link: 1, name: 2 }]));
+// // or
+// console.log(Result.checkWinnerResult([{ link: 1, name: 1 }, { link: 2, name: 2 }, { link: 3, name: 3 }]));
+// // If condition is not met
+// console.log(Result.checkWinnerResult([{ link: 2, name: 2 }, { link: 1, name: 1 }, { link: 2, name: 2 }]));

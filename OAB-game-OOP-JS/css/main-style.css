@@ -120,12 +120,13 @@ header span {
 /* divs dimensions */
 
 .image {
-    width: 30%;
     height: 80px;
-    border: 1px solid #000;
     background-color: #fff;
     border-radius: 50%;
-    margin: 0 2%;
+}
+
+div.image {
+    margin: 2%;
 }
 
 
@@ -161,6 +162,7 @@ header span {
     color: #4fbe23;
     padding: 1%;
     cursor: pointer;
+    outline: none;
 }
 
 
