@@ -152,6 +152,7 @@ div.image {
 /* Starting button = Zakręć */
 
 #start {
+    display: block;
     margin: 5% auto;
     width: 70%;
     max-width: 300px;

@@ -3,7 +3,7 @@
 //it will be the only one wallet object
 class Wallet {
     // first create method constructor
-    constructor(money) {
+    constructor(money = 500) {
         // Money in our wallet is a private data
         let _money = money;
         // methode which lets us use our _money method it needs to be created in constructor method not prototype
