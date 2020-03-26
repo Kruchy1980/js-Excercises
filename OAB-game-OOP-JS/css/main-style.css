@@ -27,6 +27,7 @@ header {
     border-bottom: 1px solid linear-gradient(to right, #a51569, #d3d31b, #dd2222e7);
     border-radius: 0 0 20px 20px;
     font-size: 16px;
+    margin-bottom: 3%;
 }
 
 
@@ -55,8 +56,7 @@ header span {
     height: 100px;
     min-width: 300px;
     width: 70vw;
-    margin: 2% auto;
-    margin-top: 3%;
+    margin: 3% auto;
     font-size: 300%;
     color: #ffff00;
     text-align: center;
@@ -120,13 +120,14 @@ header span {
 /* divs dimensions */
 
 .image {
+    width: 80px;
     height: 80px;
     background-color: #fff;
     border-radius: 50%;
 }
 
 div.image {
-    margin: 2%;
+    margin: 5% 2%;
 }
 
 
@@ -149,9 +150,19 @@ div.image {
 }
 
 
+/* Currency */
+
+.currency {
+    font-size: 2em;
+    margin-left: 2%;
+    color: rgb(67, 214, 22);
+}
+
+
 /* Starting button = Zakręć */
 
 #start {
+    display: block;
     margin: 5% auto;
     width: 70%;
     max-width: 300px;
@@ -192,7 +203,7 @@ div.image {
 
 .score {
     width: 60%;
-    margin: 3%;
+    margin: 5%;
     text-align: left;
 }
 
@@ -207,6 +218,9 @@ div.image {
 /* footer */
 
 footer {
+    position: relative;
+    bottom: 1%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
     margin-top: 2%;

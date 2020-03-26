@@ -25,7 +25,7 @@ class Result {
         //  Now the rules of winning - where we assign the array from the Draw method
     static checkWinnerResult(draw) {
         // conditional statement responsible for determination of winning rules
-        if (draw[0].name === draw[1].name && draw[1].name === draw[2].name || draw[0].name !== draw[1].name && draw[0].name !== draw[2].name && draw[1].name !== draw[2].name) return true;
+        if (draw[0] === draw[1] && draw[1] === draw[2] || draw[0] !== draw[1] && draw[0] !== draw[2] && draw[1] !== draw[2]) return true;
         // If there is no such a result than
         else return false;
     }
