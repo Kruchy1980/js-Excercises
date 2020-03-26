@@ -46,7 +46,8 @@ class Draw {
     drawResult() {
         // The get results will be forwarded to the variable created inside the drawResult method
         let images = [];
-        for (let i = 0; i < this.options.length; i++) {
+        // Now through the for loop we are building the array of drawed objects from options
+        for (let i = 0; i < 3; i++) {
             // Now we need to draw the index in that loop
             const optionsIndex = Math.floor(Math.random() * this.options.length);
             // Now we need to get specified object from the options array

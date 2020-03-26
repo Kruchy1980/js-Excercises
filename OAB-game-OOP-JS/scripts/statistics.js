@@ -10,7 +10,8 @@ class Statistics {
             // will be created empty array where thanks to methohdes we will insert theh results
             // On the beginning for tests we can add couple objects inside the property array
             // The object will have 2 datas if win and the value of bid - on the beginning theh values will be fixed
-            this.gameResults = [{ win: true, bid: 5 }, { win: false, bid: -10 }];
+            // this.gameResults = [{ win: true, bid: 5 }, { win: false, bid: -10 }];
+            this.gameResults = [];
             // later for game not fixed objects
             // this.gameResults = [];
         }
